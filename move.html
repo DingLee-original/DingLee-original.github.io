@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta charset="ISO-8859-1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 45px;
+            width: 56px;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            background: #fff;
+        }
+    </style>
+</head>
+<body class="hello" style = "background-color: #212728;">
+    <div class="p">
+        <p>
+            <!-- h4 is not used for this pourpose -->
+            <!-- just bare it  -->
+            <h4 style="color: lightgreen;">
+                redirected successfully!!
+            </h4>
+        </p>
+        <p style="color:antiquewhite;">
+            'ನಮಸ್ಕಾರ, ಇದು ಕನ್ನಡ ಭಾಷೆಯ ಉದಾಹರಣೆ.'
+        </p>
+    </div>
+
+    <div class = "contaner">
+        <div class = "box">Box1</div>
+        <div class = "box">Box2</div>
+        <div class = "box">Box3</div>
+        <div class = "box">Box4</div>
+        <div class = "box">Box5</div>
+
+    </div>
+
+    <p id = "full-screen" style="color : paleturquoise">
+        full screen 
+    </p>
+
+    <script>
+       
+    //    js
+    console.log("hello world");
+    // request full screen
+
+    const fullscr = document.getElementById('full-screen');
+
+    fullscr.addEventListener('click',()=>{
+        document.body.requestFullscreen();
+    });
+    // advance 
+    // console.log(document.body.scrollHeight);
+    // console.log(document.body.scrollWidth);
+
+
+    // document.body.scrollTop = 500; // Scrolls down 500 pixels
+    // console.log(document.body.scrollTop); // 500
+
+    // document.body.animate(
+    //   [
+    //     { backgroundColor: 'white' },
+    //     { backgroundColor: 'blue' }
+    //   ],
+    //   {
+    //     duration: 2000,
+    //     iterations: Infinity
+    //   }
+    // );
+    
+    // day 2
+    // document.body.innerHTML = '<h1 style="color: white">Hello ,World!</h1>'
+
+    // document.body.className = 'my-body-class';
+
+    // const add = document.body.addEventListener('click' , () => {
+    //     console.log('Body clicked!');
+        
+    // })
+
+    // new paragrapt to the body 
+
+    // before
+    // console.log('before Childern');
+    // console.log('before : ' , document.body.getElementsByTagName('p'));
+    
+    
+    // const newParagraph = document.createElement('p');
+    // newParagraph.textContent = 'This is a new paragraph';
+    // document.body.appendChild(newParagraph);
+    
+    // // after  
+    // console.log('after appendChild');
+    // console.log('after : ' , document.body.getElementsByTagName('p'));
+
+    // day 1
+    // document.body.childNodes;
+    // intermidiate dev
+    // console.log(document.title);
+    // console.log(document.body);
+    // console.log(document.head);
+    // console.log("url :",document.URL);
+    // console.log(document.domain);
+    // cookies 
+    // console.log("cookies :",document.cookie);
+    
+    // document.cookie = "username=JohnDoe; expires=Fri, 31 Dec 2023 23:59:59 GMT; path=/";
+    
+    // console.log("cookies :",document.cookie);
+
+    // referrer referrer 
+    // console.log("referrer :" , document.referrer);
+
+    // console.log('ready :',document.readyState);
+    // console.log(document.forms);
+    // console.log(document.images);
+    // console.log(document.links);
+    
+
+        
+    </script>
+</body>
+
+</html>
